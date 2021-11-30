@@ -10,13 +10,31 @@ name = input("(type in your name) ")
 print(f"{name}, I'm thinking of a number between 1 and 100.")
 print("Try to guess my number.")
 
+correct_num = randint(1, 100)
+count = 0
+
+while True:
+    guess = input("Your guess? ")
+    count += 1
+    if guess == correct_num:
+        pass
+    else:
+        pass
+
+"""
+get user's guess
+check if guess is correct
+if guess is correct:
+    break
+else:
+    tell them if it is too low or too high
+"""
+
 
 """
 $ python3 game.py
-Howdy, what's your name?
-(type in your name) Jessica
-Jessica, I'm thinking of a number between 1 and 100.
-Try to guess my number.
+the loop part:
+
 Your guess? 50
 Your guess is too low, try again.
 Your guess? 80
